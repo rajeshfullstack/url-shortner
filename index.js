@@ -36,7 +36,6 @@ app.get("/:short_url", (req, res) => {
                 res.json({status: 0, message: "Link Not Found"})
             }
         }else{
-            // res.json(doc)
             res.redirect(doc.url);
         }
     }).clone()
